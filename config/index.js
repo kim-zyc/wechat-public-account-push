@@ -79,15 +79,15 @@ export const config = {
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {"type": "*生日", "亲爱的宝宝": "宝宝的生日还有", "year": "2023", "date": "05-28"},
-        {"type": "*节日", "亲爱的宝宝": "今天是我们在一起的", "year": "2021", "date": "12-12"},
+        {"type": "*节日", "亲爱的宝宝": "结婚纪念日", "year": "2028", "date": "05-20"},
         // 注意：此条件置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-        {"": "", "": "", "": " ", "": ""},
-        {"": "", " ": "", "": "", "": ""},
+        {"type": "生日", "name": "", "year": "1996", "date": "09-31"},
+        {"type": "节日", " name": "被搭讪纪念日", "year": "2021", "date": "09-01"},
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
       customizedDateList: [
         // 在一起的日子
-        {"keyword": "love_day", date: "2022-09-08"},
+        {"keyword": "love_day", date: "2021-12-12"},
         // 结婚纪念日
         {"keyword": "marry_day", date: "2022-09-09"},
         // 退伍日
@@ -95,7 +95,7 @@ export const config = {
       ]
     },
     {
-      name: "老婆1",
+      name: "宝宝",
       id: "",
       useTemplateId: "",
       province: "",
